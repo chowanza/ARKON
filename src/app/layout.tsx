@@ -8,8 +8,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ARKON C.A | Ingeniería y Consultoría",
-  description: "Soluciones integrales de ingeniería, consultoría, HSEQ y gestión de activos.",
+  title: "ARKON C.A | Soluciones Estratégicas Oil & Gas",
+  description: "Especialistas en ingeniería, procura, construcción (IPC), mantenimiento de pozos y saneamiento ambiental para la industria Oil & Gas.",
+  keywords: ["Ingeniería", "Oil & Gas", "Mantenimiento de Pozos", "HSEQ", "Construcción", "Saneamiento Ambiental", "ARKON"],
+  openGraph: {
+    title: "ARKON C.A | Soluciones Estratégicas Oil & Gas",
+    description: "Especialistas en ingeniería, procura, construcción (IPC), mantenimiento de pozos y saneamiento ambiental para la industria Oil & Gas.",
+    url: "https://arkon-ca.vercel.app/",
+    siteName: "ARKON C.A",
+    locale: "es_VE",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
