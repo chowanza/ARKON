@@ -70,7 +70,20 @@ export const Footer = ({ dict, lang }: FooterProps) => {
             </p>
           </div>
         </div>
+      </div>
 
+      {/* Copyright Bottom Bar */}
+      <div className="border-t border-white/10 mt-16">
+        <div className="container mx-auto px-4 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left text-[13px] font-light text-slate-400">
+          <p>
+            &copy; {new Date().getFullYear()} ARKON, C.A. {dict.footer.rights}
+          </p>
+          <div className="mt-4 md:mt-0 flex items-center gap-4">
+            <Link href={`/${lang}`} className="hover:text-white transition-colors">Politica de Privacidad</Link>
+            <span className="w-1 h-1 rounded-full bg-slate-600"></span>
+            <Link href={`/${lang}`} className="hover:text-white transition-colors">Terminos de Servicio</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

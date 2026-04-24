@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -14,6 +14,7 @@ interface NavbarProps {
 
 export const Navbar = ({ dict, lang }: NavbarProps) => {
   const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleLang = lang === 'es' ? 'en' : 'es';
 
   const getToggleHref = () => {
@@ -68,11 +69,41 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
           </Link>
         </div>
 
-        <button className="md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        <button 
+          className="md:hidden text-white p-2" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          )}
         </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div 
+        className={`md:hidden absolute top-full left-0 w-full bg-[#1e293b]/95 backdrop-blur-md border-t border-white/10 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <nav className="flex flex-col px-6 py-6 gap-6 text-[17px] font-medium text-white">
+          <Link href={`/${lang}`} onClick={() => setIsMenuOpen(false)} className={`transition-smooth ${isActive(`/${lang}`) ? 'text-[#E57F26]' : 'hover:text-white/80'}`}>{dict.navbar.home}</Link>
+          <Link href={`/${lang}/nosotros`} onClick={() => setIsMenuOpen(false)} className={`transition-smooth ${isActive(`/${lang}/nosotros`) ? 'text-[#E57F26]' : 'hover:text-white/80'}`}>{dict.navbar.nosotros}</Link>
+          <Link href={`/${lang}/servicios`} onClick={() => setIsMenuOpen(false)} className={`transition-smooth ${isActive(`/${lang}/servicios`) ? 'text-[#E57F26]' : 'hover:text-white/80'}`}>{dict.navbar.servicios}</Link>
+          <Link href={`/${lang}/contacto`} onClick={() => setIsMenuOpen(false)} className={`transition-smooth ${isActive(`/${lang}/contacto`) ? 'text-[#E57F26]' : 'hover:text-white/80'}`}>{dict.navbar.contacto}</Link>
+          
+          <div className="h-[1px] w-full bg-white/20 my-1"></div>
+          
+          <Link href={getToggleHref()} onClick={() => setIsMenuOpen(false)} className="text-white hover:text-white/80 transition-smooth">
+            <span className="font-light text-white/60 mr-2">Language:</span> {dict.navbar.languageToggle}
+          </Link>
+        </nav>
       </div>
     </header>
   );
