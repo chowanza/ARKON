@@ -24,6 +24,13 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
     return `/${toggleLang}${pathname}`;
   };
 
+  const isActive = (path: string) => {
+    if (path === `/${lang}`) {
+      return pathname === `/${lang}`;
+    }
+    return pathname.startsWith(path);
+  };
+
   return (
     <header className="absolute top-0 z-50 w-full bg-transparent">
       <div className="container mx-auto px-4 lg:px-12 h-24 flex items-center justify-between">
@@ -38,19 +45,19 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
           <nav className="flex items-center gap-6 lg:gap-8 text-[15px] md:text-[17px] font-normal text-white">
             <Link href={`/${lang}`} className="relative group pb-1">
               <span className="group-hover:text-white/90 transition-smooth">{dict.navbar.home}</span>
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              <span className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] transition-transform origin-left duration-300 ${isActive(`/${lang}`) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
             </Link>
             <Link href={`/${lang}/nosotros`} className="relative group pb-1">
               <span className="group-hover:text-white/90 transition-smooth">{dict.navbar.nosotros}</span>
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              <span className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] transition-transform origin-left duration-300 ${isActive(`/${lang}/nosotros`) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
             </Link>
             <Link href={`/${lang}/servicios`} className="relative group pb-1">
               <span className="group-hover:text-white/90 transition-smooth">{dict.navbar.servicios}</span>
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              <span className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] transition-transform origin-left duration-300 ${isActive(`/${lang}/servicios`) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
             </Link>
             <Link href={`/${lang}/contacto`} className="relative group pb-1">
               <span className="group-hover:text-white/90 transition-smooth">{dict.navbar.contacto}</span>
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              <span className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#E57F26] transition-transform origin-left duration-300 ${isActive(`/${lang}/contacto`) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`}></span>
             </Link>
           </nav>
 

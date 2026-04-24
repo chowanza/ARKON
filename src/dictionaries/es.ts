@@ -136,5 +136,115 @@ export const es = {
       }
     },
     button: "CONTACTA CON NOSOTROS"
+  },
+  serviciosPage: {
+    hero: {
+      title: "CONOCE NUESTROS SERVICIOS",
+      desc: "Brindamos soporte estratégico en la Industria Oil & Gas para la ejecución de actividades de perforación, rehabilitación y servicios a pozos, así como la construcción, reparación, mantenimiento e instalación en las áreas de Refinación y Procesamiento de Crudo, para el área Civil, Mecánica, Eléctrica e Instrumentación.",
+      button: "Contáctanos"
+    },
+    categories: [
+      {
+        title: "Servicios de Pozos y Optimización de Producción",
+        icon: "/pozos_icon.svg",
+        items: [
+          { title: "Intervención y Reparación", desc: "Rehabilitación, completación de pozos petroleros y gasíferos para recuperar la producción comercial." },
+          { title: "Reacondicionamiento de Árboles de Producción", desc: "Mantenimiento preventivo y correctivo de válvulas de cabezales de producción." },
+          { title: "Bombeo Mecánico e Industrial", desc: "Instalación, mantenimiento de sistemas de levantamiento artificial, desmalezado y pintura." },
+          { title: "Suministro de Camión Vacío", desc: "Suministro de camiones vacum y super vacum para manejo de fluidos industriales." }
+        ]
+      },
+      {
+        title: "Ingeniería, Procura y Construcción de Infraestructura (IPC)",
+        icon: "/IPC_icon.svg",
+        desc: "Desarrollo de proyectos de infraestructura en sus distintas fases de ingeniería y construcción.",
+        items: [
+          { title: "Obras Mecánicas y Tuberías", desc: "Fabricación y montaje de estructuras, soldadura de alta presión, reparación de tanques y líneas de flujo." },
+          { title: "Mantenimiento de Tanques", desc: "Mantenimiento preventivo y correctivo de tanques de almacenamiento para la industria petrolera." },
+          { title: "Obras Civiles", desc: "Movimiento de tierra, construcción de fundaciones, vialidad, arquitectura e impermeabilización." },
+          { title: "Obras Eléctricas e Instrumentación", desc: "Tendido de cableado de potencia y control, instalación de tableros eléctricos, puesta a tierra y sistemas de medición." }
+        ]
+      },
+      {
+        title: "Saneamiento Ambiental y Gestión de Fluidos",
+        icon: "/saneamiento_icon.svg",
+        desc: "Operaciones destinadas a la mitigación de impactos ambientales y remediación de ecosistemas.",
+        items: [
+          { title: "Saneamiento Integral del área", desc: "Limpieza y saneamiento ambiental en locaciones, desmalezado de áreas y recolección de pasivos ambientales." },
+          { title: "Recuperación de Crudo", desc: "Extracción y recolección de derrames de hidrocarburos en cuerpos de agua y suelos afectados." },
+          { title: "Limpieza Química e Hidráulica", desc: "Limpieza profunda de equipos, tuberías y fosas operativas para eliminar incrustaciones, lodos y sedimentos." },
+          { title: "Transporte de Fluidos", desc: "Manejo seguro de fluidos residuales y efluentes industriales, garantizando su correcta disposición final." }
+        ]
+      },
+      {
+        title: "Suministro de Equipos, Maquinaria y Logística Pesada",
+        icon: "/maquinaria_icon.svg",
+        desc: "Contamos con una flota de equipos y maquinarias pesadas para soportar operaciones de alta exigencia.",
+        items: [
+          { title: "Maquinaria Liviana y Pesada", desc: "Alquiler de equipos como grúas, montacargas, retroexcavadoras, camiones 350, vacuum y cisternas." },
+          { title: "Equipos de Manejo de Sólidos y Control", desc: "Suministro de taladros, centrifugas, desgasificadores, zarandas y equipos auxiliares para operaciones de perforación." },
+          { title: "Herramientas de Subsuelo y Superficie", desc: "Disponibilidad de herramientas especializadas para intervención, pesca y perfilaje en pozos petroleros." },
+          { title: "Transporte de Cargas Pesadas", desc: "Servicio de transporte y movilización de equipos sobredimensionados mediante Low Boy y chutos para la industria energética." }
+        ]
+      },
+      {
+        title: "Más servicios",
+        items: [
+          { title: "Asesoría y Consultoría Especializada", desc: "Brindamos soporte técnico y profesional integral para optimizar procesos en la industria de Oil & Gas. Ofrecemos estudios de factibilidad, análisis de riesgos y evaluación de desempeño operativo." },
+          { title: "Mantenimiento Integral de Tanques (Completación y Soldadura)", desc: "Mantenimiento especializado en tanques de almacenamiento de hidrocarburos. Ejecución de trabajos de soldadura, reparación de cúpulas, fondo y paredes bajo las normas API 650." },
+          { title: "Saneamiento de Efluentes y de Fosas", desc: "Gestión ambiental enfocada en el tratamiento y disposición final segura de efluentes líquidos y saneamiento de fosas. Empleo de tecnologías para separar crudo y recuperar el entorno ambiental natural." },
+          { title: "Limpieza Química e Hidráulica de Tanques", desc: "Aplicación de métodos mecánicos y químicos para remover hidrocarburos de alta densidad, arena y lodos sedimentados, asegurando condiciones operativas óptimas en tanques y líneas." },
+          { title: "Logística y Transporte de Maquinaria Pesada", desc: "Movilización segura y eficiente de equipos industriales y petroleros pesados mediante flotas especializadas (Low Boy y gandolas), cumpliendo con estándares viales y de seguridad en carga." },
+          { title: "Instalación y mantenimiento de redes de Tuberías (Aéreas y enterradas)", desc: "Construcción, ensamblaje, reemplazo y reparación de sistemas de tuberías para transporte de gas y fluidos. Pruebas hidrostáticas y protección catódica para prevenir la corrosión." }
+        ]
+      }
+    ]
+  },
+  contactoPage: {
+    hero: {
+      title: "INICIA TU PROYECTO CON NOSOTROS",
+      desc: "Estamos listos para ser el aliado estratégico de su próxima operación. Contáctenos para solicitar cotizaciones, asesoría técnica o información detallada sobre nuestro portafolio de servicios."
+    },
+    form: {
+      title: "Llena el formulario de contacto",
+      name: "Nombre Completo",
+      email: "Correo electrónico",
+      phone: "Teléfono de Contacto",
+      company: "Empresa/Organización",
+      service: "Servicio de interés",
+      serviceOptions: [
+        "Servicios de Pozos y Optimización de Producción",
+        "Ingeniería, Procura y Construcción de Infraestructura (IPC)",
+        "Saneamiento Ambiental y Gestión de Fluidos",
+        "Suministro de Equipos, Maquinaria y Logística Pesada",
+        "Asesoría y Consultoría Especializada",
+        "Mantenimiento Integral de Tanques (Completación y de Soldadura)",
+        "Saneamiento de efluentes y de fosas",
+        "Limpieza química e hidráulica de tanques",
+        "Logística y Transporte de maquinaria pesada",
+        "Instalación y mantenimiento de redes de tuberías (aéreas y enterradas)"
+      ],
+      message: "Comentario adicional / requerimiento",
+      button: "ENVIAR"
+    },
+    directory: {
+      title: "Directorio e Información Corporativa",
+      operative: {
+        title: "Sede Operativa",
+        desc: "Avenida José Antonio Anzoátegui, Urbanización El Oasis, Quinta #17. Anaco - Estado Anzoátegui - Venezuela. (Zona Postal 6003)."
+      },
+      fiscal: {
+        title: "Sede Fiscal",
+        desc: "Calle 12, Edif. Centro Yoli, Piso #1. Urbanización Colinas del Neverí. Barcelona - Estado Anzoátegui - Venezuela. (Zona Postal 6001)."
+      },
+      phones: {
+        title: "Líneas de Atención Directa",
+        desc: "Venezuela: +58 281-2811869 / +58 414-8390026 / +58 412-8390029\nInternacional (USA): +1 832-387-3013"
+      },
+      emailBox: {
+        title: "Correo Electrónico",
+        desc: "ogarcia@arkonv.com"
+      }
+    }
   }
 };

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
@@ -35,10 +36,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <Button size="lg" variant="orange" className="font-semibold uppercase tracking-wider px-8 h-14 min-w-[200px]">
+                <Button size="lg" variant="orange" className="font-semibold uppercase tracking-wider px-8 h-14 min-w-[200px]" href={`/${lang}/contacto`}>
                   {dict.hero.contactUs}
                 </Button>
-                <Button size="lg" variant="glass" className="font-semibold uppercase tracking-wider px-8 h-14 min-w-[200px]">
+                <Button size="lg" variant="glass" className="font-semibold uppercase tracking-wider px-8 h-14 min-w-[200px]" href={`/${lang}/servicios`}>
                   {dict.hero.viewServices}
                 </Button>
               </div>
@@ -105,7 +106,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               </FadeIn>
 
               <FadeIn direction="up" delay={0.4} className="mt-12">
-                <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-8 h-12 flex items-center gap-3">
+                <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-8 h-12 flex items-center gap-3" href={`/${lang}/nosotros`}>
                   {dict.nosotros.button} <span className="text-xl font-normal leading-none mb-0.5">&rarr;</span>
                 </Button>
               </FadeIn>
@@ -124,17 +125,19 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
             <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
               {dict.portafolio.items.map((item, idx) => (
-                <FadeIn key={idx} delay={idx * 0.15} direction="up" className="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] border border-green-200/60 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[160px] text-center bg-white hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 relative flex items-center justify-center mb-4">
-                    <Image src={item.icon} alt={item.title} fill className="object-contain" />
-                  </div>
-                  <h4 className="text-[15px] font-medium text-slate-800 leading-snug px-2">{item.title}</h4>
+                <FadeIn key={idx} delay={idx * 0.15} direction="up" className="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
+                  <Link href={`/${lang}/servicios`} className="border border-green-200/60 rounded-2xl p-6 flex flex-col items-center justify-center min-h-[160px] text-center bg-white hover:shadow-md transition-shadow h-full cursor-pointer block">
+                    <div className="w-12 h-12 relative flex items-center justify-center mb-4 mx-auto">
+                      <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                    </div>
+                    <h4 className="text-[15px] font-medium text-slate-800 leading-snug px-2">{item.title}</h4>
+                  </Link>
                 </FadeIn>
               ))}
             </div>
 
             <FadeIn direction="up" delay={0.4} className="text-center mt-16">
-              <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-10 h-14 min-w-[200px]">
+              <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-10 h-14 min-w-[200px]" href={`/${lang}/servicios`}>
                 {dict.portafolio.button}
               </Button>
             </FadeIn>

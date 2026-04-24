@@ -24,9 +24,9 @@ export const Footer = ({ dict, lang }: FooterProps) => {
         <div>
           <h4 className="text-white font-bold mb-6 text-[15px] tracking-wide">{dict.footer.quickLinks.title}</h4>
           <ul className="space-y-4 text-[14px] font-light text-slate-300">
-            <li><Link href="#inicio" className="hover:text-white transition-smooth">{dict.footer.quickLinks.home}</Link></li>
-            <li><Link href="#nosotros" className="hover:text-white transition-smooth">{dict.footer.quickLinks.nosotros}</Link></li>
-            <li><Link href="#servicios" className="hover:text-white transition-smooth">{dict.footer.quickLinks.servicios}</Link></li>
+            <li><Link href={`/${lang}`} className="hover:text-white transition-smooth">{dict.footer.quickLinks.home}</Link></li>
+            <li><Link href={`/${lang}/nosotros`} className="hover:text-white transition-smooth">{dict.footer.quickLinks.nosotros}</Link></li>
+            <li><Link href={`/${lang}/servicios`} className="hover:text-white transition-smooth">{dict.footer.quickLinks.servicios}</Link></li>
           </ul>
         </div>
         

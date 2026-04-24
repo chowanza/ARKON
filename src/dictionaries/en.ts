@@ -136,5 +136,115 @@ export const en = {
       }
     },
     button: "CONTACT US"
+  },
+  serviciosPage: {
+    hero: {
+      title: "DISCOVER OUR SERVICES",
+      desc: "We provide strategic support in the Oil & Gas Industry for drilling, rehabilitation, and well services execution, as well as construction, repair, maintenance, and installation in the Refining and Crude Processing areas, covering Civil, Mechanical, Electrical, and Instrumentation disciplines.",
+      button: "Contact Us"
+    },
+    categories: [
+      {
+        title: "Well Services and Production Optimization",
+        icon: "/pozos_icon.svg",
+        items: [
+          { title: "Intervention and Repair", desc: "Rehabilitation and completion of oil and gas wells to recover commercial production." },
+          { title: "Production Tree Reconditioning", desc: "Preventive and corrective maintenance of production wellhead valves." },
+          { title: "Mechanical and Industrial Pumping", desc: "Installation and maintenance of artificial lift systems, weed control, and painting." },
+          { title: "Vacuum Truck Supply", desc: "Supply of vacuum and super vacuum trucks for industrial fluid management." }
+        ]
+      },
+      {
+        title: "Engineering, Procurement, and Construction (EPC)",
+        icon: "/IPC_icon.svg",
+        desc: "Development of infrastructure projects in their different engineering and construction phases.",
+        items: [
+          { title: "Mechanical Works and Piping", desc: "Fabrication and assembly of structures, high-pressure welding, tank repair, and flow lines." },
+          { title: "Tank Maintenance", desc: "Preventive and corrective maintenance of storage tanks for the oil industry." },
+          { title: "Civil Works", desc: "Earth movement, construction of foundations, roads, architecture, and waterproofing." },
+          { title: "Electrical Works and Instrumentation", desc: "Laying of power and control wiring, installation of electrical panels, grounding, and measurement systems." }
+        ]
+      },
+      {
+        title: "Environmental Remediation and Fluid Management",
+        icon: "/saneamiento_icon.svg",
+        desc: "Operations aimed at mitigating environmental impacts and remediating ecosystems.",
+        items: [
+          { title: "Integral Area Remediation", desc: "Cleaning and environmental remediation in locations, area clearing, and collection of environmental liabilities." },
+          { title: "Crude Recovery", desc: "Extraction and collection of hydrocarbon spills in affected water bodies and soils." },
+          { title: "Chemical and Hydraulic Cleaning", desc: "Deep cleaning of operational equipment, pipes, and pits to remove scales, sludges, and sediments." },
+          { title: "Fluid Transport", desc: "Safe handling of residual fluids and industrial effluents, ensuring their proper final disposal." }
+        ]
+      },
+      {
+        title: "Supply of Equipment, Machinery and Heavy Logistics",
+        icon: "/maquinaria_icon.svg",
+        desc: "We have a fleet of heavy equipment and machinery to support highly demanding operations.",
+        items: [
+          { title: "Light and Heavy Machinery", desc: "Rental of equipment such as cranes, forklifts, backhoes, 350 trucks, vacuums, and tankers." },
+          { title: "Solids Handling and Control Equipment", desc: "Supply of drills, centrifuges, degassers, shakers, and auxiliary equipment for drilling operations." },
+          { title: "Subsurface and Surface Tools", desc: "Availability of specialized tools for intervention, fishing, and logging in oil wells." },
+          { title: "Heavy Load Transport", desc: "Transportation and mobilization service for oversized equipment using Low Boys and trucks for the energy industry." }
+        ]
+      },
+      {
+        title: "More Services",
+        items: [
+          { title: "Specialized Advisory and Consulting", desc: "We provide comprehensive technical and professional support to optimize processes in the Oil & Gas industry. We offer feasibility studies, risk analysis, and operational performance evaluation." },
+          { title: "Integral Tank Maintenance (Completion and Welding)", desc: "Specialized maintenance of hydrocarbon storage tanks. Execution of welding works, dome, bottom, and wall repairs under API 650 standards." },
+          { title: "Effluent and Pit Remediation", desc: "Environmental management focused on the safe treatment and final disposal of liquid effluents and pit remediation. Use of technologies to separate crude and recover the natural environment." },
+          { title: "Chemical and Hydraulic Tank Cleaning", desc: "Application of mechanical and chemical methods to remove high-density hydrocarbons, sand, and settled sludges, ensuring optimal operational conditions in tanks and lines." },
+          { title: "Logistics and Heavy Machinery Transport", desc: "Safe and efficient mobilization of industrial and heavy oil equipment through specialized fleets (Low Boy and trailers), complying with road and load safety standards." },
+          { title: "Installation and Maintenance of Piping Networks (Aerial and Buried)", desc: "Construction, assembly, replacement, and repair of piping systems for gas and fluid transport. Hydrostatic testing and cathodic protection to prevent corrosion." }
+        ]
+      }
+    ]
+  },
+  contactoPage: {
+    hero: {
+      title: "START YOUR PROJECT WITH US",
+      desc: "We are ready to be the strategic ally of your next operation. Contact us to request quotes, technical advice, or detailed information about our service portfolio."
+    },
+    form: {
+      title: "Fill out the contact form",
+      name: "Full Name",
+      email: "Email Address",
+      phone: "Contact Phone",
+      company: "Company/Organization",
+      service: "Service of interest",
+      serviceOptions: [
+        "Well Services and Production Optimization",
+        "Engineering, Procurement, and Construction (EPC)",
+        "Environmental Remediation and Fluid Management",
+        "Supply of Equipment, Machinery and Heavy Logistics",
+        "Specialized Advisory and Consulting",
+        "Integral Tank Maintenance (Completion and Welding)",
+        "Effluent and Pit Remediation",
+        "Chemical and Hydraulic Tank Cleaning",
+        "Logistics and Heavy Machinery Transport",
+        "Installation and Maintenance of Piping Networks (Aerial and Buried)"
+      ],
+      message: "Additional comment / requirement",
+      button: "SEND"
+    },
+    directory: {
+      title: "Directory and Corporate Information",
+      operative: {
+        title: "Operational Headquarters",
+        desc: "José Antonio Anzoátegui Ave., El Oasis Urbanization, Quinta #17. Anaco - Anzoátegui State - Venezuela. (Zip Code 6003)."
+      },
+      fiscal: {
+        title: "Fiscal Headquarters",
+        desc: "12th Street, Centro Yoli Bldg, 1st Floor. Colinas del Neverí Urbanization. Barcelona - Anzoátegui State - Venezuela. (Zip Code 6001)."
+      },
+      phones: {
+        title: "Direct Attention Lines",
+        desc: "Venezuela: +58 281-2811869 / +58 414-8390026 / +58 412-8390029\nInternational (USA): +1 832-387-3013"
+      },
+      emailBox: {
+        title: "Email",
+        desc: "ogarcia@arkonv.com"
+      }
+    }
   }
 };

@@ -98,7 +98,7 @@ export default async function Nosotros({ params }: { params: Promise<{ lang: str
         {/* CALL TO ACTION */}
         <section className="container mx-auto px-4 text-center">
           <FadeIn direction="up">
-            <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-10 h-12 text-[14px]">
+            <Button variant="orange" size="lg" className="font-semibold uppercase tracking-wider px-10 h-12 text-[14px]" href={`/${lang}/contacto`}>
               {dict.nosotrosPage.button}
             </Button>
           </FadeIn>
