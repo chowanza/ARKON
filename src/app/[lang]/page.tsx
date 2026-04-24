@@ -56,9 +56,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               </h2>
             </FadeIn>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 lg:gap-y-0 divide-y md:divide-y-0 lg:divide-x divide-slate-200">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
               {dict.objetivo.items.map((obj, idx) => (
-                <FadeIn key={idx} delay={idx * 0.15} direction="up" className="flex flex-col items-center pt-8 md:pt-0 lg:px-8 first:lg:pl-0 last:lg:pr-0">
+                <FadeIn key={idx} delay={idx * 0.15} direction="up" className="relative flex flex-col items-center pb-8 border-b border-slate-200 last:border-b-0 md:border-b-0 lg:px-8 first:lg:pl-0 last:lg:pr-0 lg:border-r last:lg:border-r-0 lg:border-slate-200 lg:pb-0">
                   <div className="w-16 h-16 relative flex items-center justify-center mb-6">
                     <Image src={obj.icon} alt={obj.title} fill className="object-contain" />
                   </div>

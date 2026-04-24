@@ -83,9 +83,9 @@ export default async function Contacto({ params, searchParams }: { params: Promi
                       className="w-full border border-slate-200 rounded-lg px-4 py-3 text-[14.5px] text-slate-700 focus:outline-none focus:border-[#E57F26] focus:ring-1 focus:ring-[#E57F26] transition-colors bg-white"
                     />
                   </div>
-                  <div>
+                  <div className="relative">
                     <select 
-                      className="w-full border border-slate-200 rounded-lg px-4 py-3 text-[14.5px] text-slate-500 focus:outline-none focus:border-[#E57F26] focus:ring-1 focus:ring-[#E57F26] transition-colors bg-white appearance-none"
+                      className="w-full border border-slate-200 rounded-lg px-4 py-3 text-[14.5px] text-slate-500 focus:outline-none focus:border-[#E57F26] focus:ring-1 focus:ring-[#E57F26] transition-colors bg-white appearance-none pr-10"
                       defaultValue={preselectedService}
                     >
                       <option value="" disabled>{dict.contactoPage.form.service}</option>
@@ -93,6 +93,11 @@ export default async function Contacto({ params, searchParams }: { params: Promi
                         <option key={idx} value={opt}>{opt}</option>
                       ))}
                     </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-slate-400">
+                      <svg width="12" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
                   </div>
                   <div>
                     <textarea 
