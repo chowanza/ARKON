@@ -77,7 +77,7 @@ export default async function Servicios({ params }: { params: Promise<{ lang: st
 
                     return (
                       <FadeIn key={itemIdx} delay={itemIdx * 0.1} direction="up">
-                        <Accordion title={item.title} contactHref={contactHref}>
+                        <Accordion title={item.title} icon={(item as any).icon} contactHref={contactHref}>
                           {item.desc}
                         </Accordion>
                       </FadeIn>

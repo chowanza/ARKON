@@ -64,7 +64,10 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
 
           <div className="h-5 w-[1.5px] bg-white/40 mx-2 hidden lg:block"></div>
 
-          <Link href={getToggleHref()} className="text-white hover:text-white/80 transition-smooth text-[15px] md:text-[17px] font-normal hidden lg:block">
+          <Link href={getToggleHref()} className="text-white hover:text-white/80 transition-smooth text-[15px] md:text-[17px] font-normal hidden lg:flex items-center gap-2">
+            <div className="relative w-6 h-6 rounded-full overflow-hidden border border-white/20">
+              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill className="object-cover" />
+            </div>
             {dict.navbar.languageToggle}
           </Link>
         </div>
@@ -100,8 +103,12 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
           
           <div className="h-[1px] w-full bg-white/20 my-1"></div>
           
-          <Link href={getToggleHref()} onClick={() => setIsMenuOpen(false)} className="text-white hover:text-white/80 transition-smooth">
-            <span className="font-light text-white/60 mr-2">Language:</span> {dict.navbar.languageToggle}
+          <Link href={getToggleHref()} onClick={() => setIsMenuOpen(false)} className="text-white hover:text-white/80 transition-smooth flex items-center gap-3">
+            <span className="font-light text-white/60">Language:</span> 
+            <div className="relative w-5 h-5 rounded-full overflow-hidden border border-white/20">
+              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill className="object-cover" />
+            </div>
+            {dict.navbar.languageToggle}
           </Link>
         </nav>
       </div>

@@ -158,19 +158,19 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-8 max-w-4xl mx-auto">
               <FadeIn direction="up" delay={0.3} className="flex flex-col items-center">
                 <div className="w-[52px] h-[52px] relative flex items-center justify-center mb-5">
-                  <Image src="/certificacion_icon.svg" alt="ISO" fill className="object-contain" />
+                  <Image src={dict.identidad.iso.icon} alt="ISO" fill className="object-contain" />
                 </div>
                 <span className="font-light text-[17px] text-white/95 leading-relaxed">{dict.identidad.iso.line1}<br/>{dict.identidad.iso.line2}</span>
               </FadeIn>
               <FadeIn direction="up" delay={0.4} className="flex flex-col items-center">
                 <div className="w-[52px] h-[52px] relative flex items-center justify-center mb-5">
-                  <Image src="/accidentabilidad_icon.svg" alt="Cero Accidentes" fill className="object-contain" />
+                  <Image src={dict.identidad.accident.icon} alt="Cero Accidentes" fill className="object-contain" />
                 </div>
                 <span className="font-light text-[17px] text-white/95 leading-relaxed">{dict.identidad.accident.line1}<br/>{dict.identidad.accident.line2}<br/>{dict.identidad.accident.line3}</span>
               </FadeIn>
               <FadeIn direction="up" delay={0.5} className="flex flex-col items-center">
                 <div className="w-[52px] h-[52px] relative flex items-center justify-center mb-5">
-                  <Image src="/soborno_icon.svg" alt="Anti-Soborno" fill className="object-contain" />
+                  <Image src={dict.identidad.soborno.icon} alt="Anti-Soborno" fill className="object-contain" />
                 </div>
                 <span className="font-light text-[17px] text-white/95 leading-relaxed max-w-[200px]">{dict.identidad.soborno.line1}<br/>{dict.identidad.soborno.line2}</span>
               </FadeIn>

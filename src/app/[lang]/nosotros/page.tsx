@@ -74,7 +74,7 @@ export default async function Nosotros({ params }: { params: Promise<{ lang: str
             {/* Mision */}
             <FadeIn direction="up" className="border border-white/10 bg-white/5 backdrop-blur-sm rounded-3xl p-10 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
               <div className="w-12 h-12 relative flex items-center justify-center mb-6">
-                <Image src="/us_mission_icon.svg" alt="Misión Icon" fill className="object-contain" />
+                <Image src={dict.nosotrosPage.cards.mision.icon} alt="Misión Icon" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold mb-6">{dict.nosotrosPage.cards.mision.title}</h3>
               <p className="text-[14px] md:text-[15px] text-white/80 leading-relaxed font-light">
@@ -85,7 +85,7 @@ export default async function Nosotros({ params }: { params: Promise<{ lang: str
             {/* Vision */}
             <FadeIn direction="up" delay={0.2} className="border border-white/10 bg-white/5 backdrop-blur-sm rounded-3xl p-10 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
               <div className="w-12 h-12 relative flex items-center justify-center mb-6">
-                <Image src="/us_vision_icon.svg" alt="Visión Icon" fill className="object-contain" />
+                <Image src={dict.nosotrosPage.cards.vision.icon} alt="Visión Icon" fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold mb-6">{dict.nosotrosPage.cards.vision.title}</h3>
               <p className="text-[14px] md:text-[15px] text-white/80 leading-relaxed font-light">

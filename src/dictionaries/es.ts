@@ -4,7 +4,8 @@ export const es = {
     nosotros: "Nosotros",
     servicios: "Servicios",
     contacto: "Contacto",
-    languageToggle: "En", // Si está en español, el botón debe mostrar "En" para cambiar a inglés
+    languageToggle: "En",
+    languageIcon: "/usa_icon.png", // Si está en español, el botón debe mostrar "En" para cambiar a inglés
   },
   hero: {
     title: "SOLUCIONES ESTRATÉGICAS AL SERVICIO DE LA INDUSTRIA OIL & GAS",
@@ -67,15 +68,18 @@ export const es = {
     title: "Certificaciones y Normativas",
     desc: "El compromiso de ARKON es garantizar la máxima eficiencia operativa, cumpliendo con los más altos estándares de calidad, seguridad y protección ambiental.",
     iso: {
+      icon: "/certificacion_icon.svg",
       line1: "Certificación",
       line2: "ISO 9001"
     },
     accident: {
+      icon: "/accidentabilidad_icon.svg",
       line1: "Meta de",
       line2: "Accidentabilidad",
       line3: "Cero"
     },
     soborno: {
+      icon: "/soborno_icon.svg",
       line1: "Tolerancia Cero al",
       line2: "Soborno y Fraude"
     }
@@ -127,10 +131,12 @@ export const es = {
     },
     cards: {
       mision: {
+        icon: "/us_mission_icon.svg",
         title: "Misión",
         desc: "Impulsar el desarrollo industrial de nuestros clientes a través de personal altamente calificado, tecnología de vanguardia y logística. Nos comprometemos a ejecutar cada proyecto con eficacia, eficiencia y responsabilidad, garantizando soluciones 100% confiables que maximicen la productividad y aseguren la continuidad operacional, bajo un estricto cumplimiento de los estándares de seguridad y protección ambiental."
       },
       vision: {
+        icon: "/us_vision_icon.svg",
         title: "Visión",
         desc: "Consolidarnos como una empresa líder de referencia nacional e internacional en la prestación de servicios petroleros y de construcción, reconocida por su excelencia operativa y capacidad de innovación. Aspiramos a proyectarnos globalmente mediante un crecimiento sostenido y un alto nivel de disponibilidad técnica, posicionándonos como el socio estratégico preferido por nuestra integridad, transparencia y compromiso con la generación de valor duradero."
       }
@@ -190,12 +196,12 @@ export const es = {
       {
         title: "Más servicios",
         items: [
-          { title: "Asesoría y Consultoría Especializada", desc: "Brindamos soporte técnico y profesional integral para optimizar procesos en la industria de Oil & Gas. Ofrecemos estudios de factibilidad, análisis de riesgos y evaluación de desempeño operativo." },
-          { title: "Mantenimiento Integral de Tanques (Completación y Soldadura)", desc: "Mantenimiento especializado en tanques de almacenamiento de hidrocarburos. Ejecución de trabajos de soldadura, reparación de cúpulas, fondo y paredes bajo las normas API 650." },
-          { title: "Saneamiento de Efluentes y de Fosas", desc: "Gestión ambiental enfocada en el tratamiento y disposición final segura de efluentes líquidos y saneamiento de fosas. Empleo de tecnologías para separar crudo y recuperar el entorno ambiental natural." },
-          { title: "Limpieza Química e Hidráulica de Tanques", desc: "Aplicación de métodos mecánicos y químicos para remover hidrocarburos de alta densidad, arena y lodos sedimentados, asegurando condiciones operativas óptimas en tanques y líneas." },
-          { title: "Logística y Transporte de Maquinaria Pesada", desc: "Movilización segura y eficiente de equipos industriales y petroleros pesados mediante flotas especializadas (Low Boy y gandolas), cumpliendo con estándares viales y de seguridad en carga." },
-          { title: "Instalación y mantenimiento de redes de Tuberías (Aéreas y enterradas)", desc: "Construcción, ensamblaje, reemplazo y reparación de sistemas de tuberías para transporte de gas y fluidos. Pruebas hidrostáticas y protección catódica para prevenir la corrosión." }
+          { icon: "/consultoria_icon.svg", title: "Asesoría y Consultoría Especializada", desc: "Brindamos soporte técnico y profesional integral para optimizar procesos en la industria de Oil & Gas. Ofrecemos estudios de factibilidad, análisis de riesgos y evaluación de desempeño operativo." },
+          { icon: "/IPC_icon.svg", title: "Mantenimiento Integral de Tanques (Completación y Soldadura)", desc: "Mantenimiento especializado en tanques de almacenamiento de hidrocarburos. Ejecución de trabajos de soldadura, reparación de cúpulas, fondo y paredes bajo las normas API 650." },
+          { icon: "/saneamiento_icon.svg", title: "Saneamiento de Efluentes y de Fosas", desc: "Gestión ambiental enfocada en el tratamiento y disposición final segura de efluentes líquidos y saneamiento de fosas. Empleo de tecnologías para separar crudo y recuperar el entorno ambiental natural." },
+          { icon: "/saneamiento_icon.svg", title: "Limpieza Química e Hidráulica de Tanques", desc: "Aplicación de métodos mecánicos y químicos para remover hidrocarburos de alta densidad, arena y lodos sedimentados, asegurando condiciones operativas óptimas en tanques y líneas." },
+          { icon: "/maquinaria_icon.svg", title: "Logística y Transporte de Maquinaria Pesada", desc: "Movilización segura y eficiente de equipos industriales y petroleros pesados mediante flotas especializadas (Low Boy y gandolas), cumpliendo con estándares viales y de seguridad en carga." },
+          { icon: "/Ingenieria_icon.svg", title: "Instalación y mantenimiento de redes de Tuberías (Aéreas y enterradas)", desc: "Construcción, ensamblaje, reemplazo y reparación de sistemas de tuberías para transporte de gas y fluidos. Pruebas hidrostáticas y protección catódica para prevenir la corrosión." }
         ]
       }
     ]

@@ -4,7 +4,8 @@ export const en = {
     nosotros: "About Us",
     servicios: "Services",
     contacto: "Contact",
-    languageToggle: "Es", // If in English, button shows "Es" to switch to Spanish
+    languageToggle: "Es",
+    languageIcon: "/venezuela_icon.png", // If in English, button shows "Es" to switch to Spanish
   },
   hero: {
     title: "STRATEGIC SOLUTIONS SERVING THE OIL & GAS INDUSTRY",
@@ -67,15 +68,18 @@ export const en = {
     title: "Certifications and Standards",
     desc: "ARKON's commitment is to guarantee maximum operational efficiency, complying with the highest standards of quality, safety, and environmental protection.",
     iso: {
+      icon: "/certificacion_icon.svg",
       line1: "ISO 9001",
       line2: "Certification"
     },
     accident: {
+      icon: "/accidentabilidad_icon.svg",
       line1: "Zero",
       line2: "Accident",
       line3: "Goal"
     },
     soborno: {
+      icon: "/soborno_icon.svg",
       line1: "Zero Tolerance for",
       line2: "Bribery & Fraud"
     }
@@ -127,10 +131,12 @@ export const en = {
     },
     cards: {
       mision: {
+        icon: "/us_mission_icon.svg",
         title: "Mission",
         desc: "Drive the industrial development of our clients through highly qualified personnel, cutting-edge technology, and logistics. We are committed to executing each project with efficacy, efficiency, and responsibility, guaranteeing 100% reliable solutions that maximize productivity and ensure operational continuity, under strict compliance with safety and environmental protection standards."
       },
       vision: {
+        icon: "/us_vision_icon.svg",
         title: "Vision",
         desc: "Consolidate as a leading reference company nationally and internationally in the provision of oil and construction services, recognized for our operational excellence and innovation capacity. We aim to project ourselves globally through sustained growth and a high level of technical availability, positioning ourselves as the preferred strategic partner for our integrity, transparency, and commitment to generating lasting value."
       }
@@ -190,12 +196,12 @@ export const en = {
       {
         title: "More Services",
         items: [
-          { title: "Specialized Advisory and Consulting", desc: "We provide comprehensive technical and professional support to optimize processes in the Oil & Gas industry. We offer feasibility studies, risk analysis, and operational performance evaluation." },
-          { title: "Integral Tank Maintenance (Completion and Welding)", desc: "Specialized maintenance of hydrocarbon storage tanks. Execution of welding works, dome, bottom, and wall repairs under API 650 standards." },
-          { title: "Effluent and Pit Remediation", desc: "Environmental management focused on the safe treatment and final disposal of liquid effluents and pit remediation. Use of technologies to separate crude and recover the natural environment." },
-          { title: "Chemical and Hydraulic Tank Cleaning", desc: "Application of mechanical and chemical methods to remove high-density hydrocarbons, sand, and settled sludges, ensuring optimal operational conditions in tanks and lines." },
-          { title: "Logistics and Heavy Machinery Transport", desc: "Safe and efficient mobilization of industrial and heavy oil equipment through specialized fleets (Low Boy and trailers), complying with road and load safety standards." },
-          { title: "Installation and Maintenance of Piping Networks (Aerial and Buried)", desc: "Construction, assembly, replacement, and repair of piping systems for gas and fluid transport. Hydrostatic testing and cathodic protection to prevent corrosion." }
+          { icon: "/consultoria_icon.svg", title: "Specialized Advisory and Consulting", desc: "We provide comprehensive technical and professional support to optimize processes in the Oil & Gas industry. We offer feasibility studies, risk analysis, and operational performance evaluation." },
+          { icon: "/IPC_icon.svg", title: "Integral Tank Maintenance (Completion and Welding)", desc: "Specialized maintenance of hydrocarbon storage tanks. Execution of welding works, dome, bottom, and wall repairs under API 650 standards." },
+          { icon: "/saneamiento_icon.svg", title: "Effluent and Pit Remediation", desc: "Environmental management focused on the safe treatment and final disposal of liquid effluents and pit remediation. Use of technologies to separate crude and recover the natural environment." },
+          { icon: "/saneamiento_icon.svg", title: "Chemical and Hydraulic Tank Cleaning", desc: "Application of mechanical and chemical methods to remove high-density hydrocarbons, sand, and settled sludges, ensuring optimal operational conditions in tanks and lines." },
+          { icon: "/maquinaria_icon.svg", title: "Logistics and Heavy Machinery Transport", desc: "Safe and efficient mobilization of industrial and heavy oil equipment through specialized fleets (Low Boy and trailers), complying with road and load safety standards." },
+          { icon: "/Ingenieria_icon.svg", title: "Installation and Maintenance of Piping Networks (Aerial and Buried)", desc: "Construction, assembly, replacement, and repair of piping systems for gas and fluid transport. Hydrostatic testing and cathodic protection to prevent corrosion." }
         ]
       }
     ]
