@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # permite ejecutar manualmente desde GitHub
 
 jobs:
   build-and-deploy:
