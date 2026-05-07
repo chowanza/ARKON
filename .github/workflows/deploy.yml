@@ -1,0 +1,43 @@
+name: Deploy ARKON to Webuzo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '19'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and package for Webuzo
+        run: npm run deploy:pack
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./website/
+          server-dir: /home/arkonv/website/
+          dangerous-clean-slate: false
+
+      - name: Restart Node.js app via Webuzo API
+        run: |
+          curl -s "https://arkonv.com:2003/index.php?api=json&apikey=${{ secrets.WEBUZO_API_KEY }}&controller=NodeJsManager&action=restartApp&appname=arkonv" \
+            --insecure \
+            -o response.json
+          cat response.json
