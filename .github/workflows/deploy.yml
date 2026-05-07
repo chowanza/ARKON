@@ -38,6 +38,9 @@ jobs:
           local-dir: ./deploy-webuzo/website/
           server-dir: /home/arkonv/website/
           dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.git*/**
 
       - name: Restart Node.js app via Webuzo API
         run: |
