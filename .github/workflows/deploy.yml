@@ -26,6 +26,9 @@ jobs:
       - name: Build and package for Webuzo
         run: npm run deploy:pack
 
+      - name: Debug - list deploy folder
+        run: ls -la ./deploy-webuzo/website/ && echo "---" && ls -la ./deploy-webuzo/website/.next/ || echo "No .next folder found"
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -34,7 +37,7 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           local-dir: ./deploy-webuzo/website/
           server-dir: /home/arkonv/website/
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
 
       - name: Restart Node.js app via Webuzo API
         run: |
