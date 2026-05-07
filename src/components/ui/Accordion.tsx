@@ -8,10 +8,11 @@ interface AccordionProps {
   title: string;
   icon?: string;
   contactHref?: string;
+  image?: string;
   children: React.ReactNode;
 }
 
-export const Accordion = ({ title, icon, contactHref, children }: AccordionProps) => {
+export const Accordion = ({ title, icon, contactHref, image, children }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,7 +24,7 @@ export const Accordion = ({ title, icon, contactHref, children }: AccordionProps
         <div className="flex items-center gap-4 flex-1 pr-4">
           {icon && (
             <div className="w-6 h-6 relative flex-shrink-0">
-              <Image src={icon} alt={title} fill className="object-contain" />
+              <Image src={icon} alt={title} fill sizes="24px" className="object-contain" />
             </div>
           )}
           <span className={`font-semibold text-[14.5px] transition-colors ${isOpen ? 'text-slate-900' : 'text-slate-800 group-hover:text-[#E57F26]'}`}>
@@ -43,18 +44,27 @@ export const Accordion = ({ title, icon, contactHref, children }: AccordionProps
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-6 pb-5 text-[14.5px] leading-relaxed text-slate-600 font-light">
-            {children}
-            {contactHref && (
-              <div className="mt-3 flex justify-end">
-                <Link href={contactHref} className="text-[#E57F26] hover:text-[#D46B12] transition-colors p-1" title="Solicitar este servicio">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </Link>
+          <div className="px-6 pb-5 text-[14.5px] leading-relaxed text-slate-600 font-light flex flex-col md:flex-row gap-6">
+            {image && (
+              <div className="relative w-full md:w-64 h-48 md:h-36 flex-shrink-0 rounded-xl overflow-hidden shadow-sm border border-slate-100/50">
+                <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, 256px" className="object-cover" />
               </div>
             )}
+            <div className="flex-1 flex flex-col justify-between">
+              <div>
+                {children}
+              </div>
+              {contactHref && (
+                <div className="mt-4 flex justify-end">
+                  <Link href={contactHref} className="text-[#E57F26] hover:text-[#D46B12] transition-colors p-1" title="Solicitar este servicio">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

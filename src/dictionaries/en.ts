@@ -153,55 +153,60 @@ export const en = {
       {
         title: "Well Services and Production Optimization",
         icon: "/pozos_icon.svg",
+        image: "/ai_cat_1.png",
         items: [
-          { title: "Intervention and Repair", desc: "Rehabilitation and completion of oil and gas wells to recover commercial production." },
-          { title: "Production Tree Reconditioning", desc: "Preventive and corrective maintenance of production wellhead valves." },
-          { title: "Mechanical and Industrial Pumping", desc: "Installation and maintenance of artificial lift systems, weed control, and painting." },
-          { title: "Vacuum Truck Supply", desc: "Supply of vacuum and super vacuum trucks for industrial fluid management." }
+          { title: "Intervention and Repair", desc: "Rehabilitation and completion of oil and gas wells to recover commercial production.", image: "/servicios_1.jpg" },
+          { title: "Production Tree Reconditioning", desc: "Preventive and corrective maintenance of production wellhead valves.", image: "/servicios_2.png" },
+          { title: "Mechanical and Industrial Pumping", desc: "Installation and maintenance of artificial lift systems, weed control, and painting.", image: "/servicios_3.png" },
+          { title: "Vacuum Truck Supply", desc: "Supply of vacuum and super vacuum trucks for industrial fluid management.", image: "/servicios_4.png" }
         ]
       },
       {
         title: "Engineering, Procurement, and Construction (EPC)",
         icon: "/IPC_icon.svg",
+        image: "/ai_cat_2.png",
         desc: "Development of infrastructure projects in their different engineering and construction phases.",
         items: [
-          { title: "Mechanical Works and Piping", desc: "Fabrication and assembly of structures, high-pressure welding, tank repair, and flow lines." },
-          { title: "Tank Maintenance", desc: "Preventive and corrective maintenance of storage tanks for the oil industry." },
-          { title: "Civil Works", desc: "Earth movement, construction of foundations, roads, architecture, and waterproofing." },
-          { title: "Electrical Works and Instrumentation", desc: "Laying of power and control wiring, installation of electrical panels, grounding, and measurement systems." }
+          { title: "Mechanical Works and Piping", desc: "Fabrication and assembly of structures, high-pressure welding, tank repair, and flow lines.", image: "/servicios_5.png" },
+          { title: "Tank Maintenance", desc: "Preventive and corrective maintenance of storage tanks for the oil industry.", image: "/servicios_6.png" },
+          { title: "Civil Works", desc: "Earth movement, construction of foundations, roads, architecture, and waterproofing.", image: "/servicios_7.png" },
+          { title: "Electrical Works and Instrumentation", desc: "Laying of power and control wiring, installation of electrical panels, grounding, and measurement systems.", image: "/servicios_8.png" }
         ]
       },
       {
         title: "Environmental Remediation and Fluid Management",
         icon: "/saneamiento_icon.svg",
+        image: "/ai_cat_3.png",
         desc: "Operations aimed at mitigating environmental impacts and remediating ecosystems.",
         items: [
-          { title: "Integral Area Remediation", desc: "Cleaning and environmental remediation in locations, area clearing, and collection of environmental liabilities." },
-          { title: "Crude Recovery", desc: "Extraction and collection of hydrocarbon spills in affected water bodies and soils." },
-          { title: "Chemical and Hydraulic Cleaning", desc: "Deep cleaning of operational equipment, pipes, and pits to remove scales, sludges, and sediments." },
-          { title: "Fluid Transport", desc: "Safe handling of residual fluids and industrial effluents, ensuring their proper final disposal." }
+          { title: "Integral Area Remediation", desc: "Cleaning and environmental remediation in locations, area clearing, and collection of environmental liabilities.", image: "/servicios_9.png" },
+          { title: "Crude Recovery", desc: "Extraction and collection of hydrocarbon spills in affected water bodies and soils.", image: "/servicios_10.png" },
+          { title: "Chemical and Hydraulic Cleaning", desc: "Deep cleaning of operational equipment, pipes, and pits to remove scales, sludges, and sediments.", image: "/servicios_11.png" },
+          { title: "Fluid Transport", desc: "Safe handling of residual fluids and industrial effluents, ensuring their proper final disposal.", image: "/servicios_12.png" }
         ]
       },
       {
         title: "Supply of Equipment, Machinery and Heavy Logistics",
         icon: "/maquinaria_icon.svg",
+        image: "/ai_cat_4.png",
         desc: "We have a fleet of heavy equipment and machinery to support highly demanding operations.",
         items: [
-          { title: "Light and Heavy Machinery", desc: "Rental of equipment such as cranes, forklifts, backhoes, 350 trucks, vacuums, and tankers." },
-          { title: "Solids Handling and Control Equipment", desc: "Supply of drills, centrifuges, degassers, shakers, and auxiliary equipment for drilling operations." },
-          { title: "Subsurface and Surface Tools", desc: "Availability of specialized tools for intervention, fishing, and logging in oil wells." },
-          { title: "Heavy Load Transport", desc: "Transportation and mobilization service for oversized equipment using Low Boys and trucks for the energy industry." }
+          { title: "Light and Heavy Machinery", desc: "Rental of equipment such as cranes, forklifts, backhoes, 350 trucks, vacuums, and tankers.", image: "/servicios_13.png" },
+          { title: "Solids Handling and Control Equipment", desc: "Supply of drills, centrifuges, degassers, shakers, and auxiliary equipment for drilling operations.", image: "/servicios_14.png" },
+          { title: "Subsurface and Surface Tools", desc: "Availability of specialized tools for intervention, fishing, and logging in oil wells.", image: "/servicios_15.png" },
+          { title: "Heavy Load Transport", desc: "Transportation and mobilization service for oversized equipment using Low Boys and trucks for the energy industry.", image: "/servicios_16.png" }
         ]
       },
       {
         title: "More Services",
+        image: "/ai_cat_5.png",
         items: [
-          { icon: "/consultoria_icon.svg", title: "Specialized Advisory and Consulting", desc: "We provide comprehensive technical and professional support to optimize processes in the Oil & Gas industry. We offer feasibility studies, risk analysis, and operational performance evaluation." },
-          { icon: "/IPC_icon.svg", title: "Integral Tank Maintenance (Completion and Welding)", desc: "Specialized maintenance of hydrocarbon storage tanks. Execution of welding works, dome, bottom, and wall repairs under API 650 standards." },
-          { icon: "/saneamiento_icon.svg", title: "Effluent and Pit Remediation", desc: "Environmental management focused on the safe treatment and final disposal of liquid effluents and pit remediation. Use of technologies to separate crude and recover the natural environment." },
-          { icon: "/saneamiento_icon.svg", title: "Chemical and Hydraulic Tank Cleaning", desc: "Application of mechanical and chemical methods to remove high-density hydrocarbons, sand, and settled sludges, ensuring optimal operational conditions in tanks and lines." },
-          { icon: "/maquinaria_icon.svg", title: "Logistics and Heavy Machinery Transport", desc: "Safe and efficient mobilization of industrial and heavy oil equipment through specialized fleets (Low Boy and trailers), complying with road and load safety standards." },
-          { icon: "/Ingenieria_icon.svg", title: "Installation and Maintenance of Piping Networks (Aerial and Buried)", desc: "Construction, assembly, replacement, and repair of piping systems for gas and fluid transport. Hydrostatic testing and cathodic protection to prevent corrosion." }
+          { icon: "/consultoria_icon.svg", title: "Specialized Advisory and Consulting", desc: "We provide comprehensive technical and professional support to optimize processes in the Oil & Gas industry. We offer feasibility studies, risk analysis, and operational performance evaluation.", image: "/more_srv_1.png" },
+          { icon: "/IPC_icon.svg", title: "Integral Tank Maintenance (Completion and Welding)", desc: "Specialized maintenance of hydrocarbon storage tanks. Execution of welding works, dome, bottom, and wall repairs under API 650 standards.", image: "/more_srv_2.png" },
+          { icon: "/saneamiento_icon.svg", title: "Effluent and Pit Remediation", desc: "Environmental management focused on the safe treatment and final disposal of liquid effluents and pit remediation. Use of technologies to separate crude and recover the natural environment.", image: "/more_srv_3.png" },
+          { icon: "/saneamiento_icon.svg", title: "Chemical and Hydraulic Tank Cleaning", desc: "Application of mechanical and chemical methods to remove high-density hydrocarbons, sand, and settled sludges, ensuring optimal operational conditions in tanks and lines.", image: "/more_srv_4.png" },
+          { icon: "/maquinaria_icon.svg", title: "Logistics and Heavy Machinery Transport", desc: "Safe and efficient mobilization of industrial and heavy oil equipment through specialized fleets (Low Boy and trailers), complying with road and load safety standards.", image: "/more_srv_5.png" },
+          { icon: "/Ingenieria_icon.svg", title: "Installation and Maintenance of Piping Networks (Aerial and Buried)", desc: "Construction, assembly, replacement, and repair of piping systems for gas and fluid transport. Hydrostatic testing and cathodic protection to prevent corrosion.", image: "/more_srv_6.png" }
         ]
       }
     ]

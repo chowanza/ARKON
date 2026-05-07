@@ -38,7 +38,7 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
         <Link href={`/${lang}`} className="flex items-center gap-2">
           {/* Using a specific small logo size and extracting the A symbol if we had it. Since we only have logo.png, we'll make it smaller */}
           <div className="relative w-[80px] h-[80px] md:w-[90px] md:h-[90px]">
-            <Image src="/logo.svg" alt="ARKON Logo" fill className="object-contain object-left" />
+            <Image src="/logo.svg" alt="ARKON Logo" fill sizes="(max-width: 768px) 80px, 90px" className="object-contain object-left" />
           </div>
         </Link>
 
@@ -66,7 +66,7 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
 
           <Link href={getToggleHref()} className="text-white hover:text-white/80 transition-smooth text-[15px] md:text-[17px] font-normal hidden lg:flex items-center gap-2">
             <div className="relative w-6 h-6 rounded-full overflow-hidden border border-white/20">
-              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill className="object-cover" />
+              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill sizes="24px" className="object-cover" />
             </div>
             {dict.navbar.languageToggle}
           </Link>
@@ -106,7 +106,7 @@ export const Navbar = ({ dict, lang }: NavbarProps) => {
           <Link href={getToggleHref()} onClick={() => setIsMenuOpen(false)} className="text-white hover:text-white/80 transition-smooth flex items-center gap-3">
             <span className="font-light text-white/60">Language:</span> 
             <div className="relative w-5 h-5 rounded-full overflow-hidden border border-white/20">
-              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill className="object-cover" />
+              <Image src={(dict.navbar as any).languageIcon} alt={dict.navbar.languageToggle} fill sizes="20px" className="object-cover" />
             </div>
             {dict.navbar.languageToggle}
           </Link>

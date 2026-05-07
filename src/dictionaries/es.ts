@@ -153,55 +153,60 @@ export const es = {
       {
         title: "Servicios de Pozos y Optimización de Producción",
         icon: "/pozos_icon.svg",
+        image: "/ai_cat_1.png",
         items: [
-          { title: "Intervención y Reparación", desc: "Rehabilitación, completación de pozos petroleros y gasíferos para recuperar la producción comercial." },
-          { title: "Reacondicionamiento de Árboles de Producción", desc: "Mantenimiento preventivo y correctivo de válvulas de cabezales de producción." },
-          { title: "Bombeo Mecánico e Industrial", desc: "Instalación, mantenimiento de sistemas de levantamiento artificial, desmalezado y pintura." },
-          { title: "Suministro de Camión Vacío", desc: "Suministro de camiones vacum y super vacum para manejo de fluidos industriales." }
+          { title: "Intervención y Reparación", desc: "Rehabilitación, completación de pozos petroleros y gasíferos para recuperar la producción comercial.", image: "/servicios_1.jpg" },
+          { title: "Reacondicionamiento de Árboles de Producción", desc: "Mantenimiento preventivo y correctivo de válvulas de cabezales de producción.", image: "/servicios_2.png" },
+          { title: "Bombeo Mecánico e Industrial", desc: "Instalación, mantenimiento de sistemas de levantamiento artificial, desmalezado y pintura.", image: "/servicios_3.png" },
+          { title: "Suministro de Camión Vacío", desc: "Suministro de camiones vacum y super vacum para manejo de fluidos industriales.", image: "/servicios_4.png" }
         ]
       },
       {
         title: "Ingeniería, Procura y Construcción de Infraestructura (IPC)",
         icon: "/IPC_icon.svg",
+        image: "/ai_cat_2.png",
         desc: "Desarrollo de proyectos de infraestructura en sus distintas fases de ingeniería y construcción.",
         items: [
-          { title: "Obras Mecánicas y Tuberías", desc: "Fabricación y montaje de estructuras, soldadura de alta presión, reparación de tanques y líneas de flujo." },
-          { title: "Mantenimiento de Tanques", desc: "Mantenimiento preventivo y correctivo de tanques de almacenamiento para la industria petrolera." },
-          { title: "Obras Civiles", desc: "Movimiento de tierra, construcción de fundaciones, vialidad, arquitectura e impermeabilización." },
-          { title: "Obras Eléctricas e Instrumentación", desc: "Tendido de cableado de potencia y control, instalación de tableros eléctricos, puesta a tierra y sistemas de medición." }
+          { title: "Obras Mecánicas y Tuberías", desc: "Fabricación y montaje de estructuras, soldadura de alta presión, reparación de tanques y líneas de flujo.", image: "/servicios_5.png" },
+          { title: "Mantenimiento de Tanques", desc: "Mantenimiento preventivo y correctivo de tanques de almacenamiento para la industria petrolera.", image: "/servicios_6.png" },
+          { title: "Obras Civiles", desc: "Movimiento de tierra, construcción de fundaciones, vialidad, arquitectura e impermeabilización.", image: "/servicios_7.png" },
+          { title: "Obras Eléctricas e Instrumentación", desc: "Tendido de cableado de potencia y control, instalación de tableros eléctricos, puesta a tierra y sistemas de medición.", image: "/servicios_8.png" }
         ]
       },
       {
         title: "Saneamiento Ambiental y Gestión de Fluidos",
         icon: "/saneamiento_icon.svg",
+        image: "/ai_cat_3.png",
         desc: "Operaciones destinadas a la mitigación de impactos ambientales y remediación de ecosistemas.",
         items: [
-          { title: "Saneamiento Integral del área", desc: "Limpieza y saneamiento ambiental en locaciones, desmalezado de áreas y recolección de pasivos ambientales." },
-          { title: "Recuperación de Crudo", desc: "Extracción y recolección de derrames de hidrocarburos en cuerpos de agua y suelos afectados." },
-          { title: "Limpieza Química e Hidráulica", desc: "Limpieza profunda de equipos, tuberías y fosas operativas para eliminar incrustaciones, lodos y sedimentos." },
-          { title: "Transporte de Fluidos", desc: "Manejo seguro de fluidos residuales y efluentes industriales, garantizando su correcta disposición final." }
+          { title: "Saneamiento Integral del área", desc: "Limpieza y saneamiento ambiental en locaciones, desmalezado de áreas y recolección de pasivos ambientales.", image: "/servicios_9.png" },
+          { title: "Recuperación de Crudo", desc: "Extracción y recolección de derrames de hidrocarburos en cuerpos de agua y suelos afectados.", image: "/servicios_10.png" },
+          { title: "Limpieza Química e Hidráulica", desc: "Limpieza profunda de equipos, tuberías y fosas operativas para eliminar incrustaciones, lodos y sedimentos.", image: "/servicios_11.png" },
+          { title: "Transporte de Fluidos", desc: "Manejo seguro de fluidos residuales y efluentes industriales, garantizando su correcta disposición final.", image: "/servicios_12.png" }
         ]
       },
       {
         title: "Suministro de Equipos, Maquinaria y Logística Pesada",
         icon: "/maquinaria_icon.svg",
+        image: "/ai_cat_4.png",
         desc: "Contamos con una flota de equipos y maquinarias pesadas para soportar operaciones de alta exigencia.",
         items: [
-          { title: "Maquinaria Liviana y Pesada", desc: "Alquiler de equipos como grúas, montacargas, retroexcavadoras, camiones 350, vacuum y cisternas." },
-          { title: "Equipos de Manejo de Sólidos y Control", desc: "Suministro de taladros, centrifugas, desgasificadores, zarandas y equipos auxiliares para operaciones de perforación." },
-          { title: "Herramientas de Subsuelo y Superficie", desc: "Disponibilidad de herramientas especializadas para intervención, pesca y perfilaje en pozos petroleros." },
-          { title: "Transporte de Cargas Pesadas", desc: "Servicio de transporte y movilización de equipos sobredimensionados mediante Low Boy y chutos para la industria energética." }
+          { title: "Maquinaria Liviana y Pesada", desc: "Alquiler de equipos como grúas, montacargas, retroexcavadoras, camiones 350, vacuum y cisternas.", image: "/servicios_13.png" },
+          { title: "Equipos de Manejo de Sólidos y Control", desc: "Suministro de taladros, centrifugas, desgasificadores, zarandas y equipos auxiliares para operaciones de perforación.", image: "/servicios_14.png" },
+          { title: "Herramientas de Subsuelo y Superficie", desc: "Disponibilidad de herramientas especializadas para intervención, pesca y perfilaje en pozos petroleros.", image: "/servicios_15.png" },
+          { title: "Transporte de Cargas Pesadas", desc: "Servicio de transporte y movilización de equipos sobredimensionados mediante Low Boy y chutos para la industria energética.", image: "/servicios_16.png" }
         ]
       },
       {
         title: "Más servicios",
+        image: "/ai_cat_5.png",
         items: [
-          { icon: "/consultoria_icon.svg", title: "Asesoría y Consultoría Especializada", desc: "Brindamos soporte técnico y profesional integral para optimizar procesos en la industria de Oil & Gas. Ofrecemos estudios de factibilidad, análisis de riesgos y evaluación de desempeño operativo." },
-          { icon: "/IPC_icon.svg", title: "Mantenimiento Integral de Tanques (Completación y Soldadura)", desc: "Mantenimiento especializado en tanques de almacenamiento de hidrocarburos. Ejecución de trabajos de soldadura, reparación de cúpulas, fondo y paredes bajo las normas API 650." },
-          { icon: "/saneamiento_icon.svg", title: "Saneamiento de Efluentes y de Fosas", desc: "Gestión ambiental enfocada en el tratamiento y disposición final segura de efluentes líquidos y saneamiento de fosas. Empleo de tecnologías para separar crudo y recuperar el entorno ambiental natural." },
-          { icon: "/saneamiento_icon.svg", title: "Limpieza Química e Hidráulica de Tanques", desc: "Aplicación de métodos mecánicos y químicos para remover hidrocarburos de alta densidad, arena y lodos sedimentados, asegurando condiciones operativas óptimas en tanques y líneas." },
-          { icon: "/maquinaria_icon.svg", title: "Logística y Transporte de Maquinaria Pesada", desc: "Movilización segura y eficiente de equipos industriales y petroleros pesados mediante flotas especializadas (Low Boy y gandolas), cumpliendo con estándares viales y de seguridad en carga." },
-          { icon: "/Ingenieria_icon.svg", title: "Instalación y mantenimiento de redes de Tuberías (Aéreas y enterradas)", desc: "Construcción, ensamblaje, reemplazo y reparación de sistemas de tuberías para transporte de gas y fluidos. Pruebas hidrostáticas y protección catódica para prevenir la corrosión." }
+          { icon: "/consultoria_icon.svg", title: "Asesoría y Consultoría Especializada", desc: "Brindamos soporte técnico y profesional integral para optimizar procesos en la industria de Oil & Gas. Ofrecemos estudios de factibilidad, análisis de riesgos y evaluación de desempeño operativo.", image: "/more_srv_1.png" },
+          { icon: "/IPC_icon.svg", title: "Mantenimiento Integral de Tanques (Completación y Soldadura)", desc: "Mantenimiento especializado en tanques de almacenamiento de hidrocarburos. Ejecución de trabajos de soldadura, reparación de cúpulas, fondo y paredes bajo las normas API 650.", image: "/more_srv_2.png" },
+          { icon: "/saneamiento_icon.svg", title: "Saneamiento de Efluentes y de Fosas", desc: "Gestión ambiental enfocada en el tratamiento y disposición final segura de efluentes líquidos y saneamiento de fosas. Empleo de tecnologías para separar crudo y recuperar el entorno ambiental natural.", image: "/more_srv_3.png" },
+          { icon: "/saneamiento_icon.svg", title: "Limpieza Química e Hidráulica de Tanques", desc: "Aplicación de métodos mecánicos y químicos para remover hidrocarburos de alta densidad, arena y lodos sedimentados, asegurando condiciones operativas óptimas en tanques y líneas.", image: "/more_srv_4.png" },
+          { icon: "/maquinaria_icon.svg", title: "Logística y Transporte de Maquinaria Pesada", desc: "Movilización segura y eficiente de equipos industriales y petroleros pesados mediante flotas especializadas (Low Boy y gandolas), cumpliendo con estándares viales y de seguridad en carga.", image: "/more_srv_5.png" },
+          { icon: "/Ingenieria_icon.svg", title: "Instalación y mantenimiento de redes de Tuberías (Aéreas y enterradas)", desc: "Construcción, ensamblaje, reemplazo y reparación de sistemas de tuberías para transporte de gas y fluidos. Pruebas hidrostáticas y protección catódica para prevenir la corrosión.", image: "/more_srv_6.png" }
         ]
       }
     ]

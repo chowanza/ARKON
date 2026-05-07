@@ -46,14 +46,32 @@ export default async function Servicios({ params }: { params: Promise<{ lang: st
 
         {/* ACCORDION CONTENT SECTION */}
         <section className="py-20">
-          <div className="container mx-auto px-4 lg:px-12 max-w-4xl">
-            {dict.serviciosPage.categories.map((category, catIdx) => (
-              <div key={catIdx} className="mb-16 last:mb-0">
+          {dict.serviciosPage.categories.map((category, catIdx) => (
+            <div key={catIdx} className="mb-24 last:mb-0">
+              
+              {/* FULL WIDTH HEADER IMAGE */}
+              {(category as any).image && (
+                <FadeIn direction="up">
+                  <div className="relative w-full h-64 md:h-[450px] mb-12 overflow-hidden group">
+                    <Image 
+                      src={(category as any).image} 
+                      alt={category.title} 
+                      fill 
+                      sizes="100vw" 
+                      className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                    />
+                    <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
+                  </div>
+                </FadeIn>
+              )}
+
+              {/* CONTENT CONTAINER */}
+              <div className="container mx-auto px-4 lg:px-12 max-w-4xl">
                 <FadeIn direction="up">
                   <div className="flex items-start gap-4 mb-6">
                     {category.icon && (
                       <div className="w-8 h-8 relative flex-shrink-0 mt-1">
-                        <Image src={category.icon} alt={category.title} fill className="object-contain" />
+                        <Image src={category.icon} alt={category.title} fill sizes="32px" className="object-contain" />
                       </div>
                     )}
                     <div>
@@ -77,7 +95,7 @@ export default async function Servicios({ params }: { params: Promise<{ lang: st
 
                     return (
                       <FadeIn key={itemIdx} delay={itemIdx * 0.1} direction="up">
-                        <Accordion title={item.title} icon={(item as any).icon} contactHref={contactHref}>
+                        <Accordion title={item.title} icon={(item as any).icon} image={(item as any).image} contactHref={contactHref}>
                           {item.desc}
                         </Accordion>
                       </FadeIn>
@@ -85,8 +103,8 @@ export default async function Servicios({ params }: { params: Promise<{ lang: st
                   })}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </section>
 
       </main>

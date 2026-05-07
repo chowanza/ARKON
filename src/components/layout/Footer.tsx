@@ -16,7 +16,7 @@ export const Footer = ({ dict, lang }: FooterProps) => {
         {/* Logo Col */}
         <div className="flex items-start">
           <div className="relative w-32 h-32 md:w-36 md:h-36">
-            <Image src="/logo_in_white.svg" alt="ARKON Logo" fill className="object-contain object-left" />
+            <Image src="/logo.svg" alt="ARKON Logo" fill sizes="(max-width: 768px) 128px, 144px" className="object-contain object-left" />
           </div>
         </div>
 
@@ -38,7 +38,10 @@ export const Footer = ({ dict, lang }: FooterProps) => {
               <svg className="w-5 h-5 text-white shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
               </svg>
-              <span>agarcia@arkonv.com</span>
+              <span className="leading-relaxed whitespace-pre-line">
+                agarcia@arkonv.com{"\n"}
+                sales@arkonv.com
+              </span>
             </li>
             <li className="flex items-start gap-3">
               <svg className="w-5 h-5 text-white shrink-0 mt-1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
