@@ -32,7 +32,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: ./website/
+          local-dir: ./deploy-webuzo/website/
           server-dir: /home/arkonv/website/
           dangerous-clean-slate: false
 
