@@ -155,10 +155,10 @@ export const en = {
         icon: "/pozos_icon.svg",
         image: "/ai_cat_1.png",
         items: [
-          { title: "Intervention and Repair", desc: "Rehabilitation and completion of oil and gas wells to recover commercial production.", image: "/servicios_1.jpg" },
-          { title: "Production Tree Reconditioning", desc: "Preventive and corrective maintenance of production wellhead valves.", image: "/servicios_2.png" },
-          { title: "Mechanical and Industrial Pumping", desc: "Installation and maintenance of artificial lift systems, weed control, and painting.", image: "/servicios_3.png" },
-          { title: "Vacuum Truck Supply", desc: "Supply of vacuum and super vacuum trucks for industrial fluid management.", image: "/servicios_4.png" }
+          { title: "Intervention and Repair", desc: "Rehabilitation and completion of oil and gas wells to recover commercial production.", image: "/servicios_1.png" },
+          { title: "Production Tree Reconditioning", desc: "Preventive and corrective maintenance of production wellhead valves.", image: "/servicios_2_v2.png" },
+          { title: "Mechanical and Industrial Pumping", desc: "Installation and maintenance of artificial lift systems, weed control, and painting.", image: "/servicios_3_v2.png" },
+          { title: "Vacuum Truck Supply", desc: "Supply of vacuum and super vacuum trucks for industrial fluid management.", image: "/servicios_4_v2.png" }
         ]
       },
       {
@@ -167,7 +167,7 @@ export const en = {
         image: "/ai_cat_2.png",
         desc: "Development of infrastructure projects in their different engineering and construction phases.",
         items: [
-          { title: "Mechanical Works and Piping", desc: "Fabrication and assembly of structures, high-pressure welding, tank repair, and flow lines.", image: "/servicios_5.png" },
+          { title: "Mechanical Works and Piping", desc: "Fabrication and assembly of structures, high-pressure welding, tank repair, and flow lines.", image: "/servicios_5_v2.png" },
           { title: "Tank Maintenance", desc: "Preventive and corrective maintenance of storage tanks for the oil industry.", image: "/servicios_6.png" },
           { title: "Civil Works", desc: "Earth movement, construction of foundations, roads, architecture, and waterproofing.", image: "/servicios_7.png" },
           { title: "Electrical Works and Instrumentation", desc: "Laying of power and control wiring, installation of electrical panels, grounding, and measurement systems.", image: "/servicios_8.png" }

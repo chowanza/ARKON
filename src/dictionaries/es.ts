@@ -155,10 +155,10 @@ export const es = {
         icon: "/pozos_icon.svg",
         image: "/ai_cat_1.png",
         items: [
-          { title: "Intervención y Reparación", desc: "Rehabilitación, completación de pozos petroleros y gasíferos para recuperar la producción comercial.", image: "/servicios_1.jpg" },
-          { title: "Reacondicionamiento de Árboles de Producción", desc: "Mantenimiento preventivo y correctivo de válvulas de cabezales de producción.", image: "/servicios_2.png" },
-          { title: "Bombeo Mecánico e Industrial", desc: "Instalación, mantenimiento de sistemas de levantamiento artificial, desmalezado y pintura.", image: "/servicios_3.png" },
-          { title: "Suministro de Camión Vacío", desc: "Suministro de camiones vacum y super vacum para manejo de fluidos industriales.", image: "/servicios_4.png" }
+          { title: "Intervención y Reparación", desc: "Rehabilitación, completación de pozos petroleros y gasíferos para recuperar la producción comercial.", image: "/servicios_1.png" },
+          { title: "Reacondicionamiento de Árboles de Producción", desc: "Mantenimiento preventivo y correctivo de válvulas de cabezales de producción.", image: "/servicios_2_v2.png" },
+          { title: "Bombeo Mecánico e Industrial", desc: "Instalación, mantenimiento de sistemas de levantamiento artificial, desmalezado y pintura.", image: "/servicios_3_v2.png" },
+          { title: "Suministro de Camión Vacío", desc: "Suministro de camiones vacum y super vacum para manejo de fluidos industriales.", image: "/servicios_4_v2.png" }
         ]
       },
       {
@@ -167,7 +167,7 @@ export const es = {
         image: "/ai_cat_2.png",
         desc: "Desarrollo de proyectos de infraestructura en sus distintas fases de ingeniería y construcción.",
         items: [
-          { title: "Obras Mecánicas y Tuberías", desc: "Fabricación y montaje de estructuras, soldadura de alta presión, reparación de tanques y líneas de flujo.", image: "/servicios_5.png" },
+          { title: "Obras Mecánicas y Tuberías", desc: "Fabricación y montaje de estructuras, soldadura de alta presión, reparación de tanques y líneas de flujo.", image: "/servicios_5_v2.png" },
           { title: "Mantenimiento de Tanques", desc: "Mantenimiento preventivo y correctivo de tanques de almacenamiento para la industria petrolera.", image: "/servicios_6.png" },
           { title: "Obras Civiles", desc: "Movimiento de tierra, construcción de fundaciones, vialidad, arquitectura e impermeabilización.", image: "/servicios_7.png" },
           { title: "Obras Eléctricas e Instrumentación", desc: "Tendido de cableado de potencia y control, instalación de tableros eléctricos, puesta a tierra y sistemas de medición.", image: "/servicios_8.png" }

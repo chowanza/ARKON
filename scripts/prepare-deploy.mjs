@@ -17,14 +17,15 @@ async function copyDir(src, dest) {
 
 async function main() {
   console.log('📦 Preparando archivos para Webuzo/cPanel...');
-  const deployDir = path.join(process.cwd(), 'deploy-webuzo');
   
-  // Limpiar carpeta de despliegue previa
-  await fs.rm(deployDir, { recursive: true, force: true }).catch(() => {});
-  await fs.mkdir(deployDir, { recursive: true });
+  // La carpeta de salida es directamente "website" en la raíz del proyecto
+  const websiteDir = path.join(process.cwd(), 'website');
+  
+  // Limpiar carpeta previa
+  await fs.rm(websiteDir, { recursive: true, force: true }).catch(() => {});
+  await fs.mkdir(websiteDir, { recursive: true });
 
-  // 1. Crear estructura para la carpeta "website" (Servidor Node)
-  const websiteDir = path.join(deployDir, 'website');
+  // 1. Copiar .next/standalone a /website
   console.log('➡️ Copiando .next/standalone a /website...');
   try {
     await copyDir(path.join(process.cwd(), '.next', 'standalone'), websiteDir);
@@ -58,10 +59,10 @@ RewriteRule ^_next/static/(.*)$ .next/static/$1 [L]
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
 
-# 3. Proxy del resto al servidor Node.js (puerto configurado en Webuzo)
+# 3. Proxy del resto al servidor Node.js (puerto 30001 configurado en Webuzo)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ http://localhost:3000%{REQUEST_URI} [P,L]
+RewriteRule ^ http://localhost:30002%{REQUEST_URI} [P,L]
 `;
 
   await fs.writeFile(path.join(websiteDir, '.htaccess'), htaccess, 'utf-8');
